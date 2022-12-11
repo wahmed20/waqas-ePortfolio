@@ -33,6 +33,8 @@ footer {
     background: #333;
     color: #fff;
     display: flex;
+    justify-content: space-between;
+    
 }
 
 footer ul {
@@ -42,9 +44,9 @@ footer ul {
 
 footer li {
     display: inline;
-    margin-inline-end: 10rem;
+    margin-inline-end: 4rem;
     font-family: "sora", sans-serif;
-    font-weight: 700;
+    align-items: center;
 }
 
 nav {
