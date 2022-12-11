@@ -1,0 +1,253 @@
+/* apply a natural box layout model to all elements */
+* {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+/* reset rules */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, firstname, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+   display: block;
+}
+
+body {
+   line-height: 1;
+   width: 600px;
+   background: white;
+   margin: 0 auto;
+   font-family: Arial, Helvetica, sans-serif; 
+   margin-top: 14%;
+   border: 20px solid gray;
+   background-image: url(images/background.jpg);
+}
+.banner
+{
+   overflow: hidden;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.banner video
+{
+   position: absolute;
+   top: 0;
+   left: 0;
+   object-fit: cover;
+   width: 100%;
+   height: 100%;
+}
+.banner .content
+{
+   position: relative;
+   z-index: 1;
+   font-weight: bold;
+   margin: 0 auto;
+   text-align: center;
+}
+.banner .content h1
+{
+   margin: 0;
+   padding: 0;
+   font-size: 1em;
+   text-transform: uppercase;
+   color: #fff;
+}
+.banner .content p
+{
+   font-size: 1.2em;
+   color: #fff;
+   text-align: left;
+   font-style: oblique;
+   line-height: 1.5em;
+}
+ol, ul {
+   list-style: none;
+}
+
+/* page header */
+header {
+   background-color: cadetblue;
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 100%;
+   color: black;
+   font-size: 30px;
+   font-weight: bold;
+   font-family: cursive;
+   text-align: center;
+   line-height: 1.5em;
+   border-bottom: 1px solid black;
+   border-left: 1px solid black;
+   border-right: 1px solid black;
+}
+/* main content */
+article {
+   text-align: left;
+   background-color: darkgray;
+   overflow: auto;
+   border-bottom: 1px solid black;
+   border-left: 1px solid black;
+   border-right: 1px solid black;
+}
+
+article h2 {
+   font-weight: bold;
+   font-size: 16px;
+   padding-bottom: 0;
+   text-align: center;
+}
+article h3 {
+   font-size: 15px;
+   padding: 1em;
+   padding-bottom: 0em;
+   padding-top: 0em;
+   padding-left: 0em;
+   float: left;
+}
+div {
+   padding: 1em;
+   border: none;
+   text-align: left;
+}
+
+div p {
+   /* font-weight: bold; */
+   margin-bottom: 0em;
+}
+
+ol {
+   list-style-type: decimal;
+   padding-left: 1em;
+}
+
+li {
+   margin: 0 0 1em 1em;
+}
+
+li span.first {
+   background: green;
+   color: white;
+   padding: 2px 5px;
+   margin-right: 3px;
+   -moz-border-radius: 5px;
+   -webkit-border-radius: 5px;
+   border-radius: 5px;
+}
+
+li span.last {
+   background: red;
+   color: white;
+   padding: 2px 5px;
+   margin-right: 3px;
+   -moz-border-radius: 5px;
+   -webkit-border-radius: 5px;
+   border-radius: 5px;
+}
+
+/* form */
+form {
+   background: white;
+   padding: 5px;
+   float: left;
+   background: transparent;
+  }
+
+fieldset {
+   padding: 1em;
+   border: none;
+   margin-top: -1em;
+}
+
+input {
+   font-size: 1em;
+   float: left;
+   margin: 1 auto;
+}
+
+#zip {
+   width: 6.3em;
+}
+
+label {
+   display: block;
+   font-weight: bold;
+   text-align: left;
+}
+
+input, label, button {
+   float: left;
+   margin: 6px 6px;
+}
+#csset {
+   visibility: hidden;
+}
+#csset label {
+   clear: left;
+}
+
+
+#city {
+   width: 8em;
+}
+
+#state {
+   width: 2em;
+}
+input:focus {
+  background: #e3d5ba;
+}
+
+label {
+  display: block;
+  margin: 0.5em 1em 0 0;
+  float: left;
+  clear: left;
+  width: 6em;
+}
+
+#submitsection {
+  padding: 1em 0;
+  text-align: center;
+}
+
+#submitBtn {
+   float: none;
+   margin: 6px 6px;
+   margin-left: -4em;
+   
+}
+#Commentsbox {
+   width: 60%;
+   height: 70px;
+   padding: 15px 15px;
+   margin-bottom: 5px;
+   border-radius: 6px;
+   margin: 1px 10px;
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 100%;
+}
